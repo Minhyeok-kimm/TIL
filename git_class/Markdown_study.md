@@ -72,7 +72,7 @@ backtick 기호 사이에 해당하는 문자를 넣는다.
 
 Link를 만드는 방법과 동일하게 작성하나, 맨 앞에 `!`를 추가한다.
 
-![캡쳐 사진](git_class/screenshot.png)
+![캡쳐 사진](./screenshot.png)
 
 ---
 
