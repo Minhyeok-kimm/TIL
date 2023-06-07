@@ -34,7 +34,7 @@
     
     - `git remote -v` : 원격 저장소 목록을 조회하는 코드
     
-    - `git push origin main` : Git 원격 저장소로 보내는(push) 코드. origin으로 지정된 저장소에 추가
+    - `git push origin main` : Git 원격 저장소로 보내는(push) 코드. origin으로 지정된 저장소에 추가. main 자리의 경우 BranchName이다.
     
 ## 3. 질문 내용 중 생각해야할 것들
 
