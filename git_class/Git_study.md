@@ -154,5 +154,18 @@ Git을 온라인에서 사용할 수 있도록 돕는 서비스이다.
 
 > 그렇게 생각할 수도 있다. origin/main과 honggildong/main이 다르게 인식된다.
 
+<br/>
+
 ---
 
+# 마지막 정리
+
+- 여러 사람이 프로젝트를 하는 경우 한 명이 `git init`을 진행하고, 나머지 인원들은 clone 받아서 사용하는 경우가 대다수이다.
+
+- `git restore --staged <file>` : add가 된 파일을 staging area에서 삭제하는 코드.
+
+- `git restore <file>` : 해당 파일을 commit한 최근 버전의 파일로 불러오는 코드
+
+- reset, revert : 이전 commit 버전을 불러오는 코드. 충돌이 날 확률이 높기 때문에 사용하는 것을 추천하지는 않음
+
+- `git commit --amend` : 커밋 메시지를 변경. 단, 해당 작업을 진행하게 되면 commit 버전이 바뀌기 때문에 push를 진행한 후에는 사용하면 안 된다.
