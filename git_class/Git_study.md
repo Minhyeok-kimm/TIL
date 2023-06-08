@@ -36,6 +36,8 @@ Git을 온라인에서 사용할 수 있도록 돕는 서비스이다.
 
 > 온라인으로 공유할 수 있는 서비스
 
+</br>
+
 ---
 
 # 질문
@@ -51,6 +53,8 @@ Git을 온라인에서 사용할 수 있도록 돕는 서비스이다.
 3. git 터미널에서 README.md 파일을 생성하고 푸시했는데 깃헙에서 자동으로 인식을 해주지 않았습니다. 내용이 없으면 자동인식을 해주지 않나요?
 
 > 오타 혹은 내용이 없으면 인식하지 않는다.
+
+</br>
 
 ---
 
@@ -71,6 +75,8 @@ Git을 온라인에서 사용할 수 있도록 돕는 서비스이다.
 
 7. push
 
+</br>
+
 ---
 
 # .gitignore
@@ -82,6 +88,8 @@ Git을 온라인에서 사용할 수 있도록 돕는 서비스이다.
 - 일반적으로 언어별 gitignore 파일을 만들어주는 사이트가 존재한다.
 [gitignore 파일 생성 사이트](https://www.toptal.com/developers/gitignore/)
 
+</br>
+
 ---
 
 # push error
@@ -89,6 +97,8 @@ Git을 온라인에서 사용할 수 있도록 돕는 서비스이다.
 - GitHub(웹)상 History와 로컬의 History가 다를 경우 로컬에서 push할 때 에러가 발생한다.
 
 - 해당 상황이 발생 시 History를 맞춰줘야 함. 이 때 사용하는 명령어가 `git pull`
+
+</br>
 
 ---
 
@@ -108,6 +118,8 @@ Git을 온라인에서 사용할 수 있도록 돕는 서비스이다.
     
     - git branch -d 이름 : 해당 branch 삭제
 
+</br>
+
 ---
 
 # Fork
@@ -122,6 +134,8 @@ Git을 온라인에서 사용할 수 있도록 돕는 서비스이다.
 
 - merge의 경우 해당 프로젝트를 관리하고 있는 사람이 허가/취소 할 수 있다.
 
+</br>
+
 ---
 
 # Git에 대해 참고할만한 문서
@@ -129,3 +143,16 @@ Git을 온라인에서 사용할 수 있도록 돕는 서비스이다.
 [Git](https://git-scm.com/book/ko/v2)
 
 [누구나 쉽게 이해할 수 있는 Git 입문](https://backlog.com/git-tutorial/kr/intro/intro1_1.html)
+
+</br>
+
+---
+
+# 질문 & 답변받은 내용
+
+- Fork를 하면 해당 main branch에서 sub branch를 만드는 의미로 생각해도 맞는 걸까요?
+
+> 그렇게 생각할 수도 있다. origin/main과 honggildong/main이 다르게 인식된다.
+
+---
+
