@@ -13,5 +13,3 @@
 ## SQL
 
 ## Python
-
-## R
