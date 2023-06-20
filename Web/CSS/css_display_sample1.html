@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display 실습</title>
+    <style type="text/css">
+        p{
+            display: inline;
+        }
+          
+        div.two{
+           /* 영역유지 안됨 */
+            display:none;
+        }
+        span{
+           display: block;
+        }
+    </style>
+</head>
+<body>
+    <div  class="one">
+        <p>Hello</p>
+        <p>world</p>
+    </div>
+    <div class="two">
+        <p>Hello2</p>
+        <p>world2</p>
+    </div>
+       
+    <p>Hello3<span>world3</span></p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display 실습</title>
+    <style type="text/css">
+        .box1_div{
+            background: lime;
+            width:400px;
+            height:100px
+        }
+        .box2_div{
+            /* display:inline; */
+            background: yellow;
+            width:200px;
+            height:200px
+        }
+        .box3_span{
+            background: aqua;
+            /* inline 스타일 span는 width와 height 적용안됨 */
+            width:400px;
+            height:100px
+        }
+        .box4_span{
+            
+            /* inline-block 스타일은 inline이지만 width와 height 적용 가능 */
+            display: inline-block;
+            background: powderblue;
+            width:400px;
+            height:100px
+        }
+    </style>
+</head>
+<body>
+    <div class="box1_div">BOX1_div</div>
+    <div class="box2_div">BOX2_div</div>
+    <span class="box3_span">BOX3_span</span><br>
+    <span class="box4_span">BOX4_span</span>
+</body>
+</html>

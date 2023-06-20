@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 실습</title>
+    <link rel="stylesheet" type="text/css" href="css/external.css">
+    <style>
+        /* class="internal" */
+        .internal {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello</p>
+    <!-- inline style 적용 / 되도록 사용하지 않기 -->
+    <p style="color:blue;">inline Style</p>
+    <!-- internal style 적용:  -->
+    <p class="internal">internal style</p>
+    <!-- external style 적용: 외부 파일로 CSS 정의 -->
+    <p id="external">external style</p>
+</body>
+</html>
