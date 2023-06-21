@@ -8,7 +8,7 @@
 
 [Git1](./git_class/Git_base.md)
 
-[Git2](./git_class/git_study)
+[Git2](./git_class/Git_study.md)
 
 ## SQL
 
