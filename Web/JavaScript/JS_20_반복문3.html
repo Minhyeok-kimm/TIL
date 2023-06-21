@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // for문: 반복 횟수 예측이 가능할 때 사용
+        /*
+        for (시작값;조건식;증감식) {
+            문장;
+        }
+        */
+        
+        // 기본적인 문법
+        for (let n = 1;n <= 5;n++) {
+            console.log("hello", n)
+        }
+        
+        // 변형된 for문
+        for (let n = 10;n > 5;n--) {
+            console.log("A", n)
+        }
+        
+        for (let n = 1;n <= 10;n+=2) {
+            console.log("B", n)
+        }
+        
+        for (var n=1,n2=1;n<=10 && n2 < 3; n+=2,n2++) {
+            console.log("C", n)
+        }    
+        
+        // 모든 제어문은 중첩이 가능하다.
+        for (let n = 1;n <= 5;n++) {
+            for (let m = 0; m < 2; m++) {
+                console.log("D");
+            }
+        }
+        
+        
+        
+        
+        console.log("end")
+        
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

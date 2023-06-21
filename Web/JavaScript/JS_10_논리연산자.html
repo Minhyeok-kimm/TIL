@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 논리연산자
+        // or 연산자: 하나만 true여도 true 반환
+        console.log(true || true); //true
+        console.log(true || false); //true
+        console.log(false || true); //true
+        console.log(false || false); //false
+        
+        //and 연산자: 하나만 false여도 false 반환
+        console.log(true && true); //true
+        console.log(true && false); //false
+        console.log(false && true); //false
+        console.log(false && false); //false
+        
+        // not 연산자: 반대의 연산
+        console.log(!true);  // false
+        console.log(!false); // true
+
+        /*
+        다음의 5가지는 항상 논리값의 false로 처리한다.
+        역으로 5가지가 아닌 것은 true로 처리한다.
+        1) 0
+        2) ""
+        3) null
+        4) undefined
+        5) NaN
+        */
+        
+        /*
+        값1 || 값2 -> 값1이 true이면 값1을 반환, 값1이 false면 값2를 반환
+        값1 && 값2 -> 값1이 true이면 값2을 반환, 값1이 false면 값1를 반환
+        */
+        
+        console.log("----------------------------");
+        console.log(10 || "Hello")
+        console.log("" || "Hello")
+        
+        console.log(10 && "world")
+        console.log(null && "world")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

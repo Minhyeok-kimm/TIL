@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 조건문
+        // 단일 if문: 조건이 true인 경우에만 실행
+        
+        console.log("start");
+        
+        if (true) {
+            console.log("run");
+        }
+        console.log("end");
+        
+        // prompt 함수: 키보드로 입력받을 수 있는 함수
+        let mesg = prompt("이름 입력");
+        let age = prompt("나이 입력");
+        // 문자를 숫자로 변경하는 함수
+        // Number.parseInt("문자"); 또는 parseInt("문자")
+        // Number.parseInt를 권장
+        console.log(mesg, age, Number.parseInt(age)+10, parseInt(age)+5);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
