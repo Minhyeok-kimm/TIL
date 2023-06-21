@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var 이용 변수
+        var n;
+        console.log(n) // undefined
+        n = 10
+        console.log(n) // 10
+        
+        var n = 20
+        console.log(n) // 20
+        
+        // 참조형 변수
+        var n = [10, 20]
+        console.log(n) // [10, 20]
+        
+        // var 변수는 함수 scope를 따른다
+        function fun() {
+            var x = 100;
+        }
+        // console.log(x) // 오류
+        
+        if(true){
+            var x2 = 100;
+        }
+        console.log(x2)
+        
+        // 해결: 함수 밖에서 사용
+        var x = 1000;
+        function fun2() {
+            
+        }
+        console.log(x) // 오류
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

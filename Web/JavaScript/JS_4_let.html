@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var 이용 변수
+        let n;
+        console.log(n) // undefined
+        n = 10
+        console.log(n) // 10
+        
+        // var n = 20 // 변수 선언 중복 불가
+        // console.log(n)
+        
+        let n2=30;
+        console.log(n2)
+        
+        // 참조형 변수
+        let n3 = [10, 20]
+        console.log(n3) // [10, 20]
+        
+        // var 변수는 블럭 scope를 따른다
+        // 해결방법: 블럭 밖에서 변수를 선언
+        function fun() {
+            let x = 100;
+        }
+        // console.log(x) // 오류
+                
+        if(true){
+            let x2 = 100;
+        }
+        // console.log(x2) // 오류
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
