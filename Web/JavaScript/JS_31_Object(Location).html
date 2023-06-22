@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // BOM 객체
+        // Location 객체: 브라우저 URL 정보
+        console.log(location);
+        console.log(location.hostname);
+        console.log(location.host);
+        console.log(location.port);
+        console.log(location.href); // 매우 중요 JS 이용해 외부 링크를 걸 수 있다.
+        
+        // 함수
+        function google_go(){
+            location.href="http://www.google.com"
+        }
+        
+        
+    </script>
+</head>
+<body>
+    <button onclick="google_go()">구글</button>
+</body>
+</html>

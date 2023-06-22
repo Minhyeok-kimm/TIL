@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 함수
+        
+        // 1. 함수 선언식
+        function fun() {
+            console.log("fun");
+        }
+        
+        // 2. 함수 표현식(익명함수) - 변수에 저장해서 함수를 사용
+        let fun2 = function () {
+            console.log("fun2");
+        };
+        
+        // 호출
+        fun();
+        fun2();
+        
+        // 파라미터 있고 리턴값 있음
+        function fun3(n, n2) {
+            console.log("fun3");
+            return n + n2
+        }
+        
+        let fun4 = function(n, n2) {
+            console.log("fun4");
+            return n + n2
+        };
+        
+        let n = fun3(10, 20);
+        let n2 = fun4(10, 20);
+        
+        console.log(n, n2);
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 함수
+        // default 파라미터 사용 가능
+        function fun(n=1, n2=2) {
+            console.log("fun", n, n2);
+        }
+        fun();
+        fun(10);
+        fun(10, 20);
+        
+        // rest 파라미터(가변인자) - 내부에서 배열로 받는다.
+        let fun2 = function (...n) {
+            console.log("fun2", n);
+        };
+        
+        fun2(10);
+        fun2(1, 2, 3, 4);
+        fun2(1, 2, 3, 4, 10, 100);
+        
+        // 혼합
+        function fun3(n=1, n2=2, ...n3){
+            console.log("fun3", n, n2, n3);
+        }
+        fun3(10);
+        fun3(1, 2, 3, 4);
+        fun3(1, 2, 3, 4, 10, 100);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

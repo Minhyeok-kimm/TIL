@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Boolean 객체
+        // 모두 false로 처리
+        console.log(new Boolean(0).toString(), new Boolean(0).valueOf());
+        console.log(new Boolean(""));
+        console.log(new Boolean(null));
+        console.log(new Boolean(undefined));
+        console.log(new Boolean(NaN));
+        
+        // 이외의 값은 true로 처리
+        console.log(new Boolean(10));
+        console.log(new Boolean("aa"));
+        
+        // toString() vs valueOf() -> valueOf()를 권장
+        let x = new Boolean(0);
+        
+        let k = x.toString(); // 문자열로 반환, "false"
+        let k2 = x.valueOf(); // 논리값으로 반환
+        
+        console.log(!k)
+        if(!k){ // if(! "false")
+            console.log("거짓1")
+        }
+        console.log(k2)
+        
+        if(!k2){ // if(! false)
+            console.log("거짓2")
+        }
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 사용자 정의 객체: JSON(객체) {key:value}
+        
+        // 1. 생성
+        let m = {"username":"홍길동", "age":20};
+        
+        // 2. 조회
+        console.log(m["username"], m["age"]); // 연관배열, key값을 변수로 사용 가능
+        let x = "username";
+        console.log(m[x], m["age"]);
+        
+        
+        console.log(m.username, m.age); // key값을 변수로 사용 불가능
+        
+        // 3. 생성 시 key 값을 변수로 지정 가능 -> {[변수]:값}의 형태
+        let k = "address";
+        var m2 = { [k]:"서울", "email":"aaa@bbb.com"};
+        console.log(m2);
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

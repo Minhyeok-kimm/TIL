@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        이벤트 객체(event)에서 꼭 알아야 할 함수
+        event.preventDefault(); -> 무조건 동작되는 기능을 방지(submit 방지)
+        event.stopPropagation(); -> 이벤트 전파 방지
+        */
+        function fun() {
+            console.log("fun");
+            // console.log("이벤트 객체", event);
+            console.log(event.p);
+        }
+        
+        function fun2() {
+            event.preventDefault()
+        }
+    </script>
+</head>
+<body>
+    <button onclick="fun()">OK</button>
+    
+    <form action="target.html" onsubmit="fun2()">
+		이름1 <input type="text" name="username" ><br>
+		나이 <input type="text" name="age" ><br>
+		<input type="submit" value="전송1">
+	</form>
+</body>
+</html>

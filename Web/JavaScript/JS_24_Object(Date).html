@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Date 객체
+        // 1. 생성
+        
+        let d = new Date();
+        console.log(d); // 현재 시간이 나옴
+        
+        // 2. 객체의 property(속성)과 method 확인
+        console.dir(d);
+        
+        // 3. property와 method 사용
+        console.log(d.getFullYear());
+        console.log(d.getMonth()+1);
+        console.log(d.getDate());
+        console.log(d.getHours());
+        console.log(d.getMinutes());
+        console.log(d.getSeconds());
+        
+        // 특정 날짜 설정
+        let d2 = new Date();
+        d2.setFullYear(2033);
+        d2.setMonth(1);
+        d2.setDate(1);
+        console.log(d2);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

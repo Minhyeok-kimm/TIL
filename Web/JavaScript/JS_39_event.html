@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun() {
+            console.log("fun");
+        }
+    </script>
+</head>
+<body onload="fun()">
+    <button onclick="fun()">OK</button>
+    <select name="cars" onchange="fun()">
+        <option value="">선택하시오</option>
+        <option value="volvo">볼보</option>
+        <option value="saab">사브</option>
+        <option value="fiat">피아트</option>
+        <option value="audi" selected>아우디</option>
+    </select>
+    
+    <!-- onkeyup: 키보드를 떼면 반응 / onkeydown: 키보드를 누르면 반응 / onkeypress: 키보드를 눌렀다 떼면 반응 -->
+    이름1 <input type="text" name="username" 
+    onkeyup="fun()" onmouseover="fun()" onmouseout="fun()"><br>
+    
+</body>
+</html>
