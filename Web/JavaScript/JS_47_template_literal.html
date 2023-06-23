@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        /*
+        문자열 작성
+         1. "" 
+         2. ''
+         3. `` 
+        */
+        
+        var n = "hello";
+        var n = "<table> \
+            <tr>\
+                <td>A</td>\
+            </tr>\
+        </table>";
+        console.log(n);
+        var n = `<table>
+            <tr>
+              <td>A</td>
+            </tr>
+         </table>`;
+        console.log(n);
+        
+        var x = "A";
+        var n = "<table> \
+                   <tr> \
+                     <td>"+x+"</td> \
+                   </tr> \
+                </table>";
+        console.log(n);
+
+        var x = "A";
+        var n = `<table>
+                   <tr>
+                     <td>${x}</td>
+                   </tr>
+                </table>`;
+        console.log(n);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

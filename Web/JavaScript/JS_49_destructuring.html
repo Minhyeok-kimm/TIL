@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 배열
+        var [a, b, c] = [10,20,30];
+        console.log(a,b,c); // 10, 20, 30
+        
+        var [a, b, c] = [10,20];
+        console.log(a,b,c); // 10, 20, undefined
+        
+        var [a, b, c=1] = [10,20];
+        console.log(a,b,c); // 10, 20, 1
+        
+        var [a, b, ...c] = [10,20, 30, 40, 50, 60];
+        console.log(a,b,c); // 10, 20, [30, 40, 50, 60]
+        
+        // JSON
+        var {a, b} = {a:100, b:200}
+        console.log(a, b); // 100, 200
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

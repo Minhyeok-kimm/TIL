@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function equal() {
+            let ck = document.querySelector("#check").checked;
+            let my_adr = document.querySelector("#my_adr");
+            let adr = document.querySelector("#adr");
+            
+            if (ck) {
+                adr.value = my_adr.value;
+            }else {
+                adr.value = "";
+            }
+            
+        }
+        
+    </script>
+</head>
+<body>
+    회원주소:<input id="my_adr" type="text" value="서울시 서초구"><br>
+    동일하면 체크하시오
+    <input id="check" type="checkbox" onclick="equal()">
+    <hr>
+    배송주소:<input id="adr" type="text" value="">
+</body>
+</html>
