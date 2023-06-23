@@ -17,7 +17,17 @@
         }
         
         function fun2() {
-            event.preventDefault()
+            alert("fun2")
+            event.preventDefault() // 기본 동작 방지
+        }
+        
+        function a(){
+            console.log("a");
+        }
+        
+        function b(){
+            console.log("b");
+            event.stopPropagation(); // 이벤트 전파 방지
         }
     </script>
 </head>
@@ -29,5 +39,12 @@
 		나이 <input type="text" name="age" ><br>
 		<input type="submit" value="전송1">
 	</form>
+    
+    <div style="background-color: aqua;" onclick="a()">
+        a
+        <div style="background-color: blueviolet;" onclick="b()">
+        b
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        // head에서 적용하려는 경우 onload를 이용해서 접근
+        // 함수를 이용해야만 head에서 접근이 가능하다.
+        function kkk() {
+            let p = document.getElementById("x"); // p태그 객체 접근
+            console.dir(p);
+            console.log(p.innerHTML);
+            console.log(p.innerText);
+            
+            let p2 = document.getElementById("x").innerText; // 메서드 체인, 문자열
+            console.log(p2);
+            
+            let x = document.querySelector("#x");
+            console.log(x, x.innerText);
+            
+            let x2 = document.querySelector(".y");
+            console.log(x2, x2.innerText);
+            
+            let x3 = document.querySelectorAll("p"); // 배열로 반환한다(NodeList)
+            console.log(x3, x3[0], x3[1], x3[0].innerText, x3[1].innerText);
+            
+        }
+        
+        function value_change() {
+            
+            // let x = document.querySelector(".y");
+            // x.innerText = "홍길동"
+            document.querySelector(".y").innerHTML="<h1>홍길동</h1>"
+            
+        }
+        
+    </script>
+</head>
+<body onload="kkk()">
+    <p id="x"><span>Hello</span></p>
+    <p class="y">world</p>
+    <button onclick="value_change()">값변경</button>
+    
+    <!-- body 마지막에서 접근도 가능. 이 때는 function으로 접근하지 않아도 된다. -->
+</body>
+</html>

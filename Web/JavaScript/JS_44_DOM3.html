@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function img_change(f) {
+            // img 태그의 속성 얻기
+            // let i = document.querySelector("#img").src;
+            // let i2 = document.querySelector("#img").width;
+            // let i3 = document.querySelector("#img").height;
+            // console.log(i, i2, i3);
+            
+            // let file = "images/"+f;
+            let file = `images/${f}`;
+            console.log(file);
+            document.querySelector("#img").src=file;
+        }
+        
+    </script>
+</head>
+<body>
+    <img id="img" src="images/a.jpg" width="100" height="100">
+    <button onclick="img_change('a.jpg')">a</button>
+    <button onclick="img_change('b.jpg')">b</button>
+    <button onclick="img_change('c.jpg')">c</button>
+</body>
+</html>

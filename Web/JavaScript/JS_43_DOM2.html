@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function total_sum () {
+            let v = document.querySelector("#myvalue").value;
+            // console.log(v, typeof v);
+            let q = document.querySelector("#quantity").value;
+            // console.dir(q);
+            
+            let sum = Number.parseInt(v) * Number.parseInt(q);
+            // console.log(sum);
+            document.querySelector("#result").innerHTML = sum;
+            
+        }
+        
+    </script>
+</head>
+<body>
+    값:<input type="text" value="1000" id="myvalue"><br>
+    갯수:
+    <select onchange="total_sum()" id="quantity">
+        <option value="">선택하시오</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+    </select>
+    <br>
+    총가격:<div id="result"></div>
+</body>
+</html>
