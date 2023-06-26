@@ -14,6 +14,10 @@
 
 ## Python
 
+## Web
+
+[HTML](./Web/HTML_%EC%A0%95%EB%A6%AC.md)
+
 ## Algorithm
 
 [Algorithm](./online_class/mlp_algorithm.md)
