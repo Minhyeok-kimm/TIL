@@ -620,9 +620,9 @@
     
         - 검정통계량: 표본평균 $\overline{X}$의 함수인 $ Z = \frac{\overline{X} - \mu}{\sigma/\sqrt{n}}$
         
-        - 검정통계량 표본분포: $Z = \frac{\overline{X} - \mu}{\sigma/\sqrt{n} \sim N[0, 1]$
+        - 검정통계량 표본분포: $Z = \frac{\overline{X} - \mu}{\sigma/\sqrt{n}} \sim N[0, 1]$
         
-        - 귀무가설 $H_0: \mu = \mu_0$이 사실일 때, $Z = \frac{\overline{X} - \mu}{\sigma/\sqrt{n} \sim N[0, 1]$
+        - 귀무가설 $H_0: \mu = \mu_0$이 사실일 때, $ Z = \frac{\overline{X} - \mu}{\sigma/\sqrt{n}} \sim N[0, 1]$
 
 - 귀무가설 $H_0$의 기각여부를 판단하기 위한 두 가지 접근 방식
 
